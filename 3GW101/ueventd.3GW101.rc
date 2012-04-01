@@ -1,0 +1,24 @@
+# gpu driver for adreno200 is globally accessible
+/dev/kgsl-3d0             0666   root       root
+
+# these should not be world writable
+/dev/rtc1      	          0660   system     radio
+/dev/msm_rotator          0660   system     graphics
+/dev/pmem_smipool*        0660   system     audio
+/dev/pmem_audio*          0660   system     audio
+/dev/pmem_smipool*        0660   system     camera
+/dev/oncrpc/*             0660   root       qcom_oncrpc
+/dev/msm_preproc_ctl*     0660   system     audio
+/dev/msm_voicememo*       0660   system     audio
+/dev/msm_amrnb*           0660   system     audio
+/dev/msm_amr_in*          0660   system     audio
+/dev/msm_voicememo*       0660   system     audio
+/dev/msm_amrwb*           0660   system     audio
+/dev/msm_qcelp*           0660   system     audio
+/dev/msm_evrc*            0660   system     audio
+
+# CDMA radio interface MUX
+/dev/msm_vidc_reg*        0660   system     audio
+/dev/msm_vidc_dec*        0660   system     audio
+/dev/msm_vidc_enc*        0660   system     audio
+/dev/yas529               0640   compass    system
